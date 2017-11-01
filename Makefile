@@ -1,6 +1,4 @@
 install:
-  wget https://github.com/creecros/opencomment/archive/master.zip
-  unzip master.zip
   mv /var/www/app/app/Helper/ProjectRoleHelper.php /var/www/app/app/Helper/ProjectRoleHelper.org
   mv /var/www/app/app/Model/ProjectRoleRetrictionModel.php /var/www/app/app/Model/ProjectRoleRetrictionModel.org
   mv /var/www/app/app/Template/task/sidebar.php /var/www/app/app/Template/task/sidebar.org
