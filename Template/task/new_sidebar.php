@@ -96,10 +96,11 @@
          <div class="sidebar-title">
            <h2><?= t('Actions') ?></h2>
          </div>
-      <ul>
+         <ul>
              <li>
               <?= $this->modal->small('comment-o', t('Add a comment'), 'CommentController', 'create', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
              </li>
-      </ul>
+         </ul>
+       <?php endif ?>
     <?php endif ?>
 </div>
