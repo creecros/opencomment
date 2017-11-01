@@ -30,12 +30,14 @@
     </div>
     <ul>
         <?php if ($this->projectRole->canUpdateTask($task)): ?>
+         <?php if ($this->projectRole->canCommentTask($task)): ?>
         <li>
             <?= $this->modal->large('edit', t('Edit the task'), 'TaskModificationController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
         </li>
         <li>
             <?= $this->modal->medium('refresh fa-rotate-90', t('Edit recurrence'), 'TaskRecurrenceController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
         </li>
+         <?php endif ?>
         <?php endif ?>
         
         <?php if ($this->projectRole->canCommentTask($task)): ?>
