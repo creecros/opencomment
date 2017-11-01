@@ -92,13 +92,14 @@
         <?= $this->hook->render('template:task:sidebar:actions', array('task' => $task)) ?>
     </ul>
     <?php else: ?>
-    <div class="sidebar-title">
-        <h2><?= t('Actions') ?></h2>
-    </div>
-    <ul>
-         <li>
-            <?= $this->modal->small('comment-o', t('Add a comment'), 'CommentController', 'create', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
-        </li>
-    </ul>
+        <?php if ($this->projectRole->canCommentTask($task)): ?>
+         <div class="sidebar-title">
+           <h2><?= t('Actions') ?></h2>
+         </div>
+      <ul>
+             <li>
+              <?= $this->modal->small('comment-o', t('Add a comment'), 'CommentController', 'create', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
+             </li>
+      </ul>
     <?php endif ?>
 </div>
