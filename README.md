@@ -15,6 +15,7 @@ Take what I got here, and replace everything you got there. Need step by step co
 * cd plug_temp
 * wget https://github.com/creecros/opencomment/archive/master.zip
 * unzip master.zip
+* mv /var/www/app/app/Template/board/tooltip_subtasks.php /var/www/app/app/Template/board/tooltip_subtasks.org
 * mv /var/www/app/app/Helper/ProjectRoleHelper.php /var/www/app/app/Helper/ProjectRoleHelper.org
 * mv /var/www/app/app/Model/ProjectRoleRestrictionModel.php /var/www/app/app/Model/ProjectRoleRestrictionModel.org
 * mv /var/www/app/app/Controller/TaskModificationController.php /var/www/app/app/Controller/TaskModificationController.org
@@ -26,6 +27,7 @@ Take what I got here, and replace everything you got there. Need step by step co
 * mv /var/www/app/app/Template/task_file/images.php /var/www/app/app/Template/task_file/images.org
 * mv /var/www/app/app/Template/subtask/menu.php /var/www/app/app/Template/subtask/menu.org
 * mv /var/www/app/app/Template/subtask/show.php /var/www/app/app/Template/subtask/show.org
+* mv opencomment-master/Template/board/new_tooltip_subtasks.php /var/www/app/app/Template/board/tooltip_subtasks.php
 * mv opencomment-master/Helper/new_ProjectRoleHelper.php /var/www/app/app/Helper/ProjectRoleHelper.php
 * mv opencomment-master/Model/new_ProjectRoleRestrictionModel.php /var/www/app/app/Model/ProjectRoleRestrictionModel.php
 * mv opencomment-master/Controller/new_TaskModificationController.php /var/www/app/app/Controller/TaskModificationController.php           
@@ -56,6 +58,7 @@ Assign this role to a user or group. Have fun being able to do nothing but comme
 
 ## This is BS, how do unistall?
 
+* mv /var/www/app/app/Template/board/tooltip_subtasks.org /var/www/app/app/Template/board/tooltip_subtasks.php
 * mv /var/www/app/app/Helper/ProjectRoleHelper.org /var/www/app/app/Helper/ProjectRoleHelper.php
 * mv /var/www/app/app/Model/ProjectRoleRestrictionModel.org /var/www/app/app/Model/ProjectRoleRestrictionModel.php
 * mv /var/www/app/app/Controller/TaskModificationController.org /var/www/app/app/Controller/TaskModificationController.php
