@@ -1,6 +1,6 @@
 # Comment-Only Restrictions in Kanboard
 
-I have no idea the correct way to do this, welcome any edits to installing, or other solutions to making this a true plugin. For now, and for me, this works. 
+I have no idea the correct way to do this, welcome any edits to installing, or other solutions to making this a true plugin. For now, and for me, this works. I am not a coding ninja, and never could get the smoke screen thing down.
 
 ## What does it do?
 
