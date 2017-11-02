@@ -4,7 +4,7 @@ I have no idea the correct way to do this, welcome any edits to installing, or o
 
 ## What does it do?
 
-This plugin, which is more of a code replacement, adds a custom role for "Can only add comments to tasks" in Kanboard. A user will basically only be able to add comments. The catch, because I am php illiterate, is that they technically can do anything a project member can, but they would have to know exact URL's or webhooks in order to do it. I have this set up for very computer illiterate folks, so I have no worries. If you have worries, don't use it, as it is probably expliotable. That being said, I have this running in production environment, and do so with no issues.
+This plugin, which is more of a code replacement, adds a custom role for "Can only add comments to tasks" in Kanboard. A user will basically only be able to add comments. The catch, in order to add a comment, they have to also be able to update a task, so you cannot take away that role. This code will block any link, dropdown, popup, sidebar, and all the places i could find, where a user can do anything to a task other than add a comment. If they know an exact URL or webhooks or API in order to edit a task, they can. I have this set up for very computer illiterate folks, so I have no worries. If you have worries, don't use it, as it is probably expliotable by ninjas. That being said, I have this running in production environment, and do so with no issues.
 
 ## How to install?
 
