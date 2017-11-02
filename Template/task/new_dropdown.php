@@ -44,6 +44,11 @@
         <li>
             <?= $this->modal->small('paper-plane', t('Send by email'), 'TaskMailController', 'create', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
         </li>
+         <?php else: ?>
+        <li>
+            <?= $this->modal->small('comment-o', t('Add a comment'), 'CommentController', 'create', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
+        </li>
+         <?php endif ?>
         <?php if ($this->projectRole->canRemoveTask($task)): ?>
             <li>
                 <?= $this->modal->confirm('trash-o', t('Remove'), 'TaskSuppressionController', 'confirm', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
@@ -58,7 +63,7 @@
             <?php endif ?>
         </li>
         <?php endif ?>
-        <?php endif ?>
+       
         <?= $this->hook->render('template:task:dropdown', array('task' => $task)) ?>
     </ul>
 </div>
