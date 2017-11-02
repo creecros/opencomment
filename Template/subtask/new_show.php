@@ -16,7 +16,7 @@
         <tr data-subtask-id="<?= $subtask['id'] ?>">
             <td>
                 <?php if ($editable): ?>
-                 <?php if ($this->projectRole->canCommentTask($task)): ?>
+                 <?php if (! $this->projectRole->canCommentTask($task)): ?>
                     <?= $this->subtask->renderTitle($subtask) ?>
                  <?php else: ?>
                     <i class="fa fa-arrows-alt draggable-row-handle" title="<?= t('Change subtask position') ?>"></i>&nbsp;
