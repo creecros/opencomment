@@ -1,5 +1,6 @@
 <div class="tooltip-large">
     <table class="table-small">
+       <?php if (! $this->projectRole->canCommentTask($task)): ?>
         <tr>
             <th class="column-70"><?= t('Subtask') ?></th>
             <?= $this->hook->render('template:board:tooltip:subtasks:header:before-assignee') ?>
@@ -7,7 +8,6 @@
         </tr>
         <?php foreach ($subtasks as $subtask): ?>
         <tr>
-            <?php if (! $this->projectRole->canCommentTask($task)): ?>
             <td>
                 <?= $this->subtask->renderToggleStatus($task, $subtask) ?>
             </td>
@@ -22,5 +22,6 @@
             </td>
         </tr>
         <?php endforeach ?>
+        <?php endif ?>
     </table>
 </div>
