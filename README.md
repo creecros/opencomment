@@ -1,4 +1,4 @@
-# opencomment
+# Comment-Only Restrictions in Kanboard
 
 I have no idea the correct way to do this, welcome any edits to installing, or other solutions to making this a true plugin. For now, and for me, this works. 
 
