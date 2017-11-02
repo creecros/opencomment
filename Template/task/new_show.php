@@ -14,7 +14,7 @@
 
 <?php if(!empty($subtasks)): ?>
     <?= $this->hook->render('template:task:show:before-subtasks', array('task' => $task, 'project' => $project)) ?>
-    <?php if ($this->projectRole->canCommentTask($task)): ?>
+    <?php if (! $this->projectRole->canCommentTask($task)): ?>
     <?= $this->render('subtask/show', array(
         'task' => $task,
         'subtasks' => $subtasks,
@@ -33,7 +33,7 @@
 
 <?php if (!empty($internal_links)): ?>
     <?= $this->hook->render('template:task:show:before-internal-links', array('task' => $task, 'project' => $project)) ?>
-    <?php if ($this->projectRole->canCommentTask($task)): ?>
+    <?php if (! $this->projectRole->canCommentTask($task)): ?>
     <?= $this->render('task_internal_link/show', array(
         'task' => $task,
         'links' => $internal_links,
