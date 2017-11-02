@@ -42,9 +42,9 @@ Take what I got here, and replace everything you got there. Need step by step co
 
 ## Ok, it's installed, now what?
 
-*Go to your project board, and then Custom Roles.
-*Create a new custom role, it doesn't matter what it's called.
-*Add the following restrictions: This is important, you must not restrict task updating, becuase adding a comment is a task update, duh!
+Go to your project board, and then Custom Roles.
+Create a new custom role, it doesn't matter what it's called.
+Add the following restrictions: This is important, you must not restrict task updating, becuase adding a comment is a task update, duh!
 * Task creation is not permitted	
 * Task suppression is not permitted	
 * Closing or opening a task is not permitted	
