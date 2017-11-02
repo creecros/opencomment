@@ -31,7 +31,7 @@ class ProjectRoleRestrictionModel extends Base
             self::RULE_TASK_MOVE            => t('Moving a task is not permitted'),
             self::RULE_TASK_CHANGE_ASSIGNEE => t('Changing assignee is not permitted'),
             self::RULE_TASK_UPDATE_ASSIGNED => t('Update only assigned tasks is permitted'),
-            self::RULE_TASK_COMMENT         => t('Can add comments to tasks'),
+            self::RULE_TASK_COMMENT         => t('Can only add comments to tasks'),
         );
     }
     /**
