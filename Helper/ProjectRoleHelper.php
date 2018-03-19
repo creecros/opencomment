@@ -10,7 +10,7 @@ use Kanboard\Model\ProjectRoleRestrictionModel;
  * @package Kanboard\Helper
  * @author  Frederic Guillot
  */
-class new_ProjectRoleHelper extends Base
+class ProjectRoleHelper extends Base
 {
     /**
      * Get project role for the current user
