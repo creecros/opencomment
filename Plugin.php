@@ -11,7 +11,7 @@ class Plugin extends Base
   public function initialize()
   {
     $this->projectAccessMap->add('CommentOnlyController', array("create", "save"), Role::PROJECT_VIEWER);
-    $this->template->hook->attach('template:task:sidebar:actions', 'CommentOnly:task/sidebar');
+    $this->template->hook->attach('template:task:sidebar:information', 'CommentOnly:task/sidebar');
 
   }
   public function getPluginName()
