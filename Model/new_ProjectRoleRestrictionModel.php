@@ -7,7 +7,7 @@ use Kanboard\Core\Base;
  * @package Kanboard\Model
  * @author  Frederic Guillot
  */
-class ProjectRoleRestrictionModel extends Base
+class new_ProjectRoleRestrictionModel extends Base
 {
     const TABLE = 'project_role_has_restrictions';
     const RULE_TASK_CREATION = 'task_creation';
