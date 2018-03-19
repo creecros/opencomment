@@ -3,6 +3,8 @@
 namespace Kanboard\Plugin\CommentOnly;
 
 use Kanboard\Core\Plugin\Base;
+use Kanboard\Core\Translator;
+use Kanboard\Core\Security\Role;
 
 class Plugin extends Base
 {
