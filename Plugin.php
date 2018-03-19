@@ -8,7 +8,8 @@ class Plugin extends Base
 {
   public function initialize()
   {
-    $this->template->hook->attach('template:task:sidebar:actions', 'CommentOnly:Task/sidebar');
+    $this->projectAccessMap->add('CommentOnly', array("create", "edit"), Role::PROJECT_VIEWER);
+    $this->template->hook->attach('template:task:sidebar:actions', 'CommentOnly:task/sidebar');
 
   }
   public function getPluginName()
