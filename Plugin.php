@@ -8,7 +8,7 @@ class Plugin extends Base
 {
   public function initialize()
   {
-    $this->template->hook->attach('template:task:sidebar', 'CommentOnly:Task/sidebar');
+    $this->template->hook->attach('template:task:sidebar:actions', 'CommentOnly:Task/sidebar');
 
   }
   public function getPluginName()
