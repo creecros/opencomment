@@ -9,7 +9,7 @@ use Kanboard\Core\ExternalTask\ExternalTaskException;
  * @package  Kanboard\Controller
  * @author   Frederic Guillot
  */
-class TaskModificationController extends BaseController
+class newTaskModificationController extends BaseController
 {
     /**
      * Set automatically the start date
