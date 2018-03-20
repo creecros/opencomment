@@ -18,7 +18,7 @@ class Plugin extends Base
   }
   public function getPluginName()
   {
-    return 'Comment Only Resctrictions';
+    return 'Comment Only Resctrictions for Project Viewers';
   }
   public function getPluginAuthor()
   {
@@ -31,7 +31,7 @@ class Plugin extends Base
   
   public function getPluginDescription()
   {
-    return 'Add Comment Only Roles';
+    return 'Add Commenting abilities for Project Viewers';
   }
   public function getPluginHomepage()
   {
