@@ -11,6 +11,8 @@ class Plugin extends Base
   public function initialize()
   {
     $this->projectAccessMap->add('CommentController', array('create', 'save', 'edit', 'update', 'confirm', 'remove'), Role::PROJECT_VIEWER);
+    $this->projectAccessMap->add('CommentListController', array('save'), Role::PROJECT_VIEWER);
+    $this->projectAccessMap->add('CommentMailController', '*', Role::PROJECT_VIEWER);
     $this->template->hook->attach('template:task:sidebar:information', 'CommentOnly:task/sidebar');
 
   }
