@@ -18,7 +18,7 @@ class Plugin extends Base
   }
   public function getPluginName()
   {
-    return 'Comment Only Resctrictions for Project Viewers';
+    return 'Comment Only Restrictions for Project Viewers';
   }
   public function getPluginAuthor()
   {
@@ -26,12 +26,12 @@ class Plugin extends Base
   }
   public function getPluginVersion()
   {
-    return '0.0.1';
+    return '0.0.2';
   }
   
   public function getPluginDescription()
   {
-    return 'Add Commenting abilities for Project Viewers';
+    return 'Adds Commenting abilities for Project Viewers';
   }
   public function getPluginHomepage()
   {
